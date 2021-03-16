@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    <!-- Escribir una funcion que, dados 2 números, genera un número aleatorio entero, entre los 2 números.
+ -->
+function getAleatoriAB (min,max) {
+    return  Math.floor(Math.random()*(max-min) + min);
+}
+console.log(getAleatoriAB(10,20));
+
+
+/* Escribir una function que transforma un nombre en sus iniciales. Ejemplo: "Nico Gasparro" => "N.G."
+ */
+function iniciales(nombre){
+    let arrayNombreApellido = nombre.split(" ");
+    console.log(arrayNombreApellido);
+    let inicial = arrayNombreApellido.map(item => {return `${item[0]}.`});
+    console.log(inicial);
+    let final = inicial.join("");
+    console.log(final);
+}
+iniciales("Josep Andreu")
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

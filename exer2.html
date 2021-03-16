@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej.2</title>
+</head>
+<body>
+<script>
+ /* 1.IF ELSE */
+ /* -CREAE UN PROGRAMA que donat una variable "num" nos digan si es mayor k 100 
+ posit o negatiu */
+     
+let num= 50;
+if(num > 100) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+
+if (num > 0) {
+    console.log("positive");
+} else {
+    console.log("negative");
+}
+
+/* “num2”, las sume y si la suma es mayor que 50 los multiplique por 2, si no, por 3. 
+ */
+
+let num1 = Number(prompt());
+let num2 = Number(prompt());
+let total = num1 + num2;
+if ( total >=50 ) {
+    alert(total*2)
+}else{
+    alert (total*3)
+}
+/*   2.IF ELSE-IF */
+/* - crear un programa que dada una variable “num” nos diga si es un múltiplo de 3, si no lo es, nos diga si es múltiplo de 8 y, si no, imprima un mensaje de error */
+let multiplo = prompt('Introdueix numero per veure si es multiple 3 o 8');
+
+if (multiplo % 3 == 0) {
+    alert("el num es multiple de 3");
+} else if (multiplo % 8 ==0) {
+    alert("el num es multiple de 8");
+} else alert ("No es multiple");
+/* - crear un programa que dadas 2 variables booleanas, “buen_tiempo” y “trabajo”, nos diga si puedo ir a la playa. Si trabajo, no puedo ir, si no trabajo verifico que haga buen tiempo. En los casos negativos imprimir un mensaje adecuado. */
+let trabajo = prompt("treballes avui) SI o NO");
+let buen_tiempo = prompt("Fa bon temps?")
+let SI = true;
+let NO = false;
+
+if (trabajo) {
+    console.log("no puedo ir a la playa")
+} else if (!trabajo) {
+    if(buen_tiempo) {
+        console.log("puc anar a la platja")
+
+    } else if (!buen_tiempo) {
+        console.log("no trabaja pero llueve")
+    }
+}
+
+/* 3.FOR */
+/* crear un programa que sume 10 a todos los números pares y reste 10 a todos los impares, para los primeros 20 números (1,2,3,4...20) */
+
+for (let i=0; i<=20; i++) {
+    if (( i%2)==0) {
+        console.log(i+10);
+    }else {
+        console.log(i-10);
+    }
+}
+
+/* crear un programa que calcule la suma de los primeros 20 números */
+
+let suma = 0;
+for (let i=0; i<=20; i++) {
+suma += 1; 
+}
+console.log(suma)
+
+
+/* 
+- crear un programa que calcule la suma de los primeros “n” números, donde el valor de n se recibe desde el “prompt”
+ */
+let n = parseInt(prompt("donam un numero n "));
+let num = 0;
+for (let i=0; i<=n; i++) {
+    num += 1
+}
+alert(num);
+/* Calcular a través de una función el area de un cuadrado e imprimir el valor concatenandolo con una cadena descriptiva ejemplo  :  area cuadrado = valor  */
+function calculo(lado) {
+    let area = lado**2;
+    console.log(`area quadrada $(area)`);
+}
+calculo(20);
+
+/* 5.Escribir una función que calcule el iva  */
+
+function calculoIVA(iva) {
+    let precioiva = iva*0.21
+    console.log(`el iva és ${precioiva}`);
+}
+calculoIVA(90);
+
+/* o triant el tipus iva */
+let tipo = parseInt(prompt(`introdueix tipus`))
+function calculoIVA(iva) {
+    let precioiva = iva*(tipo/100);
+    console.log(`el iva és ${precioiva}`);
+}
+calculoIVA(90);
+
+/* o preu i tipus  */
+let preu = parseInt(prompt(`introdueix preu`))
+let tipo = parseInt(prompt(`introdueix tipus`))
+function calculoIVA(iva) {
+    let precioiva = iva*(tipo/100);
+    console.log(`el iva és ${precioiva}`);
+}
+calculoIVA(preu);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
