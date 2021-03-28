@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="button" value="Suma" onclick="alert(suma(10,50));">
+    </form>
+
+    <script>
+    var suma = function(num1, num2) {
+        var num1 = parseFloat( document.getElementById("num1").value);
+        var num2 =  parseFloat( document.getElementById("num2").value);
+
+        var resultat = num1 + num2;
+        return resultat;
+    }
+
+    </script>    
+
+</body>
+</html>

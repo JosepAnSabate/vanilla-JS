@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="titol">titol</h1>
+    <h1 id="subtitol"></h1>
+    <p id="titol">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, itaque vel velit rem voluptatem doloremque corporis fugit voluptates nemo aliquam consequatur architecto iste omnis magni! Reprehenderit itaque dolor consequatur voluptatem?</p>
+    <p id="segon">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facere sit ipsam possimus autem hic provident, velit laudantium, inventore laborum eligendi saepe nam veniam iste similique eos modi harum temporibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quas reprehenderit temporibus adipisci quos id officiis neque nostrum. Aut voluptatum, repellendus aliquid explicabo quos illo recusandae reprehenderit voluptate voluptas incidunt!</p>
+    <script>
+        var elementsP = document.getElementsByTagName("p");
+        //accedeix elements per id
+        var segParagraf = document.getElementById("segon");
+        //crear nodes
+        //1-crear element (p)
+        var element1 = document.createElement("h2");
+        //crear un node de text
+        var contingut = document.createTextNode("aquest es el nostre titol");
+        //3afegir el node de text a lelement
+        element1.appendChild(contingut);
+        //4 agregar atributs a l'element
+        element1.setAttribute("align", "center");
+        //5 agregar element al document
+        document.getElementById("subtitol").appendChild(element1); -->
+        <!-- 15 agregan node al dom -->
+        <ol id="llista">
+            <li id="primer">primerlinia</li>
+            <li>segon vers</li>
+        </ol>
+    <script>
+        /* var element = document.createElement("li"),
+            contingut = document.createTextNode("nou text");
+
+        element.appendChild(contingut);
+        
+        var pare = document.getElementById("li")[0].parentNode;
+        var fill = document.getElementById("li")[0];
+        
+        pare.insertBefore(element, fill); */
+
+        //16 modificar dom
+        var primerElement = document.getElementById("primer");
+       // primerElement.innerHTML = "nou text";
+        primerElement.textContent = "nou text kll";
+        var pare = document.getElementsByTagName("li")[0].parentNode;
+        var fill = document.getElementsByTagName("li")[0];
+        pare.removeChild(primerElement, fill);//elimina el primer li  
+
+        
+
+    </script>
+
+</body>
+</html>

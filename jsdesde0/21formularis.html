@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="formulari" method="get">
+        <input type="text" name="nom" id="nom" maxlength="30" placeholder="Nom: ">
+        <br>
+        <input type="radio" name="sexe" id="home"> Home
+        <input type="radio" name="sexe" id="dona"> Dona
+        <br>
+
+        <input type="checkbox" name="condicions" id="condicions" required> Terminis i condicions
+        <input type="submit" id="btn" name="btn" value="Enviar">
+    </form>
+    <script>
+        (function() {
+            var formulari = document.getElementsByName('formulari')[0];
+            var elements = formulari.elements;
+            var boto = document.getElementById('btn');
+
+            var validarNom = function(e) {
+                if (formulari.nom.value == 0) {
+                    alert("completa el nom");
+                    e.preventDefault();
+                }
+
+                 
+            };
+            var validarRadio = function(e){
+                if (formulari.sexe[0].checked == true || formulari.sexe[1].checked == true ) {
+            } else { 
+                alert("completa sexe");
+                e.preventDefault();
+            }
+            };
+            
+
+            var validar = function(e) {
+                validarNom(e);
+                validarRadio(e);
+            };
+
+            formulari.addEventListener("submit", validar);
+        }())
+    </script>
+
+
+</body>
+</html>

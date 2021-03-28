@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+
+}
+
+.widget {
+    width: 80%;
+    margin: 2em;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.data {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3215rem;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.rellotge {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 0.3215rem;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+}
+
+.rellotge .caixa_segons {
+    display: inline-block;
+}
+.rellotge .segons,
+.rellotge .ampm {
+    font-size: 1.75rem;
+    display: block;
+}
